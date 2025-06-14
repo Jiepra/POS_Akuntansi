@@ -18,9 +18,9 @@ from PyQt5.QtGui import QFont, QIcon, QColor, QPixmap, QPalette
 # Database configuration
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'root',
-    'password': 'ilhamDB26',
-    'database': 'akuntansi'
+    'user': '#YOUR_USERNAME',
+    'password': '#YOUR_PASSWORD',
+    'database': '#YOUR_DATABASE'
 }
 
 # Email configuration
