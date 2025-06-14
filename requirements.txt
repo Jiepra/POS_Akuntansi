@@ -1,0 +1,12 @@
+# Core Requirements
+PyQt5
+mysql-connector-python
+matplotlib
+openpyxl
+fpdf2
+python-dateutil
+
+# Development/Dependencies
+numpy
+pandas
+Pillow
