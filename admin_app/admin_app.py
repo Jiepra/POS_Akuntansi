@@ -19,9 +19,9 @@ from matplotlib.figure import Figure
 # Konfigurasi database
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'root',
-    'password': 'ilhamDB26',
-    'database': 'akuntansi'
+    'user': '#YOUR_USERNAME',
+    'password': '#YOUR_PASSWORD',
+    'database': '#YOUR_DATABASE'
 }
 
 def connect_db():
