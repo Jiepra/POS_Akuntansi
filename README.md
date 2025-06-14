@@ -104,6 +104,44 @@ Dibangun menggunakan **Python**, **PyQt5**, dan **MySQL**, aplikasi ini dirancan
 
 ---
 
+## 🛠️ SQL Query Struktur Database
+
+Gunakan query berikut untuk membuat database dan tabel-tabel yang dibutuhkan:
+
+```sql
+-- Buat database
+CREATE DATABASE akuntansi;
+
+-- Gunakan database
+USE akuntansi;
+
+-- Tabel produk
+CREATE TABLE barang (
+    kode VARCHAR(20) PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    stok INT NOT NULL,
+    harga_beli DECIMAL(10, 2) NOT NULL,
+    harga_jual DECIMAL(10, 2) NOT NULL
+);
+
+-- Tabel transaksi penjualan
+CREATE TABLE penjualan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_pesanan VARCHAR(50) NOT NULL,
+    tanggal DATETIME NOT NULL,
+    pelanggan VARCHAR(100),
+    kode_barang VARCHAR(20),
+    jumlah INT NOT NULL,
+    harga_satuan DECIMAL(10, 2) NOT NULL,
+    total DECIMAL(10, 2) NOT NULL,
+    metode_pembayaran VARCHAR(50),
+    rating INT,
+    komentar TEXT,
+    FOREIGN KEY (kode_barang) REFERENCES barang(kode) ON DELETE SET NULL
+);
+
+---
+
 ## 📜 Lisensi
 Proyek ini dilisensikan di bawah MIT License.
 
